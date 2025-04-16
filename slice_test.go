@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"htmldump"
+	"github.com/oslyak/htmldump"
 
 	"github.com/brianvoe/gofakeit/v7"
 	"github.com/stretchr/testify/require"

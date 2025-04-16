@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"htmldump"
+	"github.com/oslyak/htmldump"
 
 	"github.com/stretchr/testify/require"
 )
