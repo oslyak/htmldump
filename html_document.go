@@ -107,6 +107,11 @@ func newHTMLDocument(writer io.Writer) *htmlDocument {
 </head>
 
 <body>
+  <script>
+    setInterval(function () {
+      location.reload();
+    }, 2000);
+  </script>
 `
 
 	return doc
