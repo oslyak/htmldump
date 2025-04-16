@@ -32,7 +32,7 @@ type Wolf struct {
 	Hungry bool
 }
 
-func main() {
+func ToHTMLAndOpen() {
 	// Generate a slice of structs
 	people := make([]Person, 0)
 	for i := 0; i < 5; i++ {
@@ -84,5 +84,5 @@ func main() {
 		"purple": "#800080",
 	}
 
-	htmldump.ToHTMLAndOpen("example.html", variables, sql, pack, person, people, colours)
+	htmldump.ToHTMLAndOpen("example-1.html", variables, sql, pack, person, people, colours)
 }
