@@ -1,6 +1,6 @@
 # HTML dump
 
-The `htmldump` package is a tool for developers, designed to simplify the visualization of Go data structures by converting them into HTML tables. This functionality is particularly useful during development and debugging, as it provides a clear and organized view of complex data.
+The `htmldump` package is a Go tool for developers, designed to simplify the visualization of Go data structures by converting them into HTML tables. This functionality is particularly useful during development and debugging, as it provides a clear and organized view of complex data.
 
 ## Supported Data Types
 
