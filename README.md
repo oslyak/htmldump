@@ -21,7 +21,7 @@ The `example/example.go` file provides a complete example of how to use the `htm
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/oslyak/htmldump.git
    cd dump
    ```
 

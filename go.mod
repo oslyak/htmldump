@@ -1,4 +1,4 @@
-module "htmldump"
+module github.com/oslyak/htmldump
 
 go 1.22
 

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"htmldump"
+	"github.com/oslyak/htmldump"
 
 	"github.com/brianvoe/gofakeit/v7"
 )
