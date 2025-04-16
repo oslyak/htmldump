@@ -37,6 +37,13 @@ The `example/example.go` file provides a complete example of how to use the `htm
 
 4. The generated HTML file (`example.html`) will open in your default browser.
 
+## How to install
+
+1. Add to your project:
+   ```bash
+   go get github.com/oslyak/htmldump@v1.0.0
+   ```
+
 ## Dependencies
 
 - [gofakeit](https://github.com/brianvoe/gofakeit): Used for generating random data.
