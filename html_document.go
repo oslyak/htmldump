@@ -92,8 +92,8 @@ func newHTMLDocument(writer io.Writer) *htmlDocument {
         border-right: 1px solid #dddddd;
     }        
 
-    .styled-table tbody tr:nth-child(even) {background: rgb(250, 250, 250)}
-    .styled-table tbody tr:nth-child(odd) {background: rgb(230, 230, 230)}
+    .styled-table tbody tr:nth-child(even) {background: rgb(230, 230, 230)}
+    .styled-table tbody tr:nth-child(odd) {background: rgb(250, 250, 250)}
 
     .styled-table th,
     .styled-table td {

@@ -63,6 +63,18 @@ func main() {
 		Age:   gofakeit.Number(18, 60),
 	}
 
+	message := "Inspect variables via map table"
+
+	magickNumber := 42
+	isItCool := true
+	sql := "SELECT Name, Species, Age, Sex, Fur, Hungry FROM animals WHERE Species = 'wolf'"
+
+	variables := map[string]interface{}{
+		"message string ": message,
+		"magicNumber int": magickNumber,
+		"isItCool bool":   isItCool,
+	}
+
 	colours := map[string]string{
 		"red":    "#FF0000",
 		"green":  "#00FF00",
@@ -72,5 +84,5 @@ func main() {
 		"purple": "#800080",
 	}
 
-	htmldump.ToHTMLAndOpen("example.html", person, people, pack, colours)
+	htmldump.ToHTMLAndOpen("example.html", variables, sql, pack, person, people, colours)
 }

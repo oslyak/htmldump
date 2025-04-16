@@ -37,8 +37,10 @@ func ToHTML(writer io.Writer, inputs ...interface{}) error {
 			err = sliceToHTML(doc, reflectedValue)
 		case isStructOrPointerToStruct(reflectedValue.Type()):
 			err = structToHTML(doc, input)
+		case isStringOrPointerToString(reflectedValue.Type()):
+			err = stringToHTML(doc, reflectedValue)
 		default:
-			err = errors.New(`[ToHTML] only accepts: structs, slices, maps, and pointers to them`)
+			err = errors.New(`[ToHTML] only accepts: structs, slices, maps, strings, and pointers to them`)
 		}
 
 		if err != nil {
