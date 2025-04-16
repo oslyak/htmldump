@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <style>
+    .styled-table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        min-width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        border: 2px solid rgb(150, 150, 150);
+        border-top: none;
+    }
+
+    .styled-table caption {
+        text-align: left;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 7px;
+        background-color: rgb(220, 220, 220);
+        border-top: 2px solid rgb(150, 150, 150);
+        border-left: 2px solid rgb(150, 150, 150);
+        border-right: 2px solid rgb(150, 150, 150);
+        border-bottom: none;
+    }
+        
+    .styled-table thead tr {
+        white-space: nowrap;
+        background-color: #009879;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .styled-table thead tr th {
+        border: 1px solid #006e58;
+    }
+
+    .styled-table thead tr:first-of-type {
+        border-top: 2px solid #009879;
+    }		
+
+    .styled-table thead tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }	
+
+    .styled-table tbody tr {
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .styled-table tbody tr td.key{
+        color: #006650;
+        font-weight: bold;
+    }        
+
+    .styled-table tbody tr td{
+        border-right: 1px solid #dddddd;
+    }        
+
+    .styled-table tbody tr:nth-child(even) {background: rgb(250, 250, 250)}
+    .styled-table tbody tr:nth-child(odd) {background: rgb(230, 230, 230)}
+
+    .styled-table th,
+    .styled-table td {
+        padding: 4px 7px;
+    }
+        
+    .styled-table tbody tr:hover {
+        color: #006650;
+    }
+  </style>    
+</head>
+
+<body>
+  <table class="styled-table">
+    <caption>struct Person</caption>
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Type</th>
+        <th>Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Name</td>
+        <td>string</td>
+        <td>Hyman Bins</td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>string</td>
+        <td>bethelparisian@crooks.com</td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td>int</td>
+        <td>24</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="styled-table">
+    <caption>[]main.Person (length: 5)</caption>
+    <thead>
+      <tr>
+        <th class="key">index</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <th class="key">int</th>
+        <th>string</th>
+        <th>string</th>
+        <th>int</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">0</td>
+        <td>Maxine Hamill</td>
+        <td>tonysanford@aufderhar.com</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td class="key">1</td>
+        <td>Santina Ferry</td>
+        <td>angielang@cronin.info</td>
+        <td>56</td>
+      </tr>
+      <tr>
+        <td class="key">2</td>
+        <td>Krystel Welch</td>
+        <td>trevorquigley@erdman.org</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td class="key">3</td>
+        <td>Gilberto Ledner</td>
+        <td>moshekertzmann@von.io</td>
+        <td>39</td>
+      </tr>
+      <tr>
+        <td class="key">4</td>
+        <td>Isidro Price</td>
+        <td>jamesonjohns@bashirian.info</td>
+        <td>42</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="styled-table">
+    <caption>[]*main.Wolf (length: 5)</caption>
+    <thead>
+      <tr>
+        <th class="key">index</th>
+        <th colspan="4">Animal</th>
+        <th>Fur</th>
+        <th>Hungry</th>
+      </tr>
+      <tr>
+        <th class="key">int</th>
+        <th>Name(string)</th>
+        <th>Species(string)</th>
+        <th>Age(int)</th>
+        <th>Sex</th>
+        <th>string</th>
+        <th>bool</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">0</td>
+        <td>Pauline Stoltenberg</td>
+        <td>salmon</td>
+        <td>3</td>
+        <td></td>
+        <td>Black</td>
+        <td>false</td>
+      </tr>
+      <tr>
+        <td class="key">1</td>
+        <td>Mireya Dooley</td>
+        <td>woodchuck</td>
+        <td>8</td>
+        <td></td>
+        <td>LightSkyBlue</td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td class="key">2</td>
+        <td>Fidel McKenzie</td>
+        <td>yak</td>
+        <td>4</td>
+        <td></td>
+        <td>Azure</td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td class="key">3</td>
+        <td>Misty Schulist</td>
+        <td>coyote</td>
+        <td>4</td>
+        <td></td>
+        <td>DarkBlue</td>
+        <td>true</td>
+      </tr>
+      <tr>
+        <td class="key">4</td>
+        <td>Eliane Klein</td>
+        <td>weasel</td>
+        <td>4</td>
+        <td></td>
+        <td>Khaki</td>
+        <td>true</td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="styled-table">
+    <caption>map[string]string (length: 6)</caption>
+    <thead>
+      <tr>
+        <th class="key">map key</th>
+        <th>value</th>
+      </tr>
+      <tr>
+        <th class="key">string</th>
+        <th>string</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="key">green</td>
+        <td>#00FF00</td>
+      </tr>
+      <tr>
+        <td class="key">blue</td>
+        <td>#0000FF</td>
+      </tr>
+      <tr>
+        <td class="key">pink</td>
+        <td>#FFC0CB</td>
+      </tr>
+      <tr>
+        <td class="key">yellow</td>
+        <td>#FFFF00</td>
+      </tr>
+      <tr>
+        <td class="key">purple</td>
+        <td>#800080</td>
+      </tr>
+      <tr>
+        <td class="key">red</td>
+        <td>#FF0000</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
